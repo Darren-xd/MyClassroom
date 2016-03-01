@@ -51,9 +51,7 @@
     _imageBg = [[UIImageView alloc]initWithImage:image];
     //自动下移视图
 //    self.automaticallyAdjustsScrollViewInsets = NO;
-    _tableView.backgroundColor = [UIColor redColor];
-//    _tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
-    _tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
 //    _tableView.requiresConstraintBasedLayout = NO;
     
     
@@ -62,8 +60,8 @@
 //    [self.view addConstraint:tableLeft];
     
     
-    NSLayoutConstraint *leftConstraint = [NSLayoutConstraint constraintWithItem:_imageBg attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0f constant:0.0f];
-    [self.view addConstraint:leftConstraint];
+//    NSLayoutConstraint *leftConstraint = [NSLayoutConstraint constraintWithItem:_imageBg attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeRight multiplier:1.0f constant:0.0f];
+//    [self.view addConstraint:leftConstraint];
     
     
     
